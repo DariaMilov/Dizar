@@ -221,7 +221,7 @@
     width:100%;
   }
   
-  .contact-one, .contact-two, .contact-three{
+  .contact-one, .contact-two, .contact-three, .contact-four{
     width:100%;
   }
   
@@ -242,6 +242,7 @@
   }  
   
   #footer-left{text-align:center;}
+
 
   /*
   **************************
@@ -308,7 +309,7 @@
     width:100%;
   }
   
-  .contact-one, .contact-two, .contact-three{
+  .contact-one, .contact-two, .contact-three, .contact-four{
     width:100%;
   }
   
