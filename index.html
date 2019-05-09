@@ -51,8 +51,8 @@
     </div>
 
     <ul class="menu-fullscreen">
-      <li><a class="ajax-link" href="single.html">Подробнее</a></li>
-      <li><a class="ajax-link" href="projects.html">Проекты</a></li>
+      <li><a class="ajax-link" href="single.html">Главная</a></li>
+      <li><a class="ajax-link" href="projects.html">Портфолио</a></li>
       <li><a class="ajax-link" href="about-us.html">О нас</a></li>
       <li><a class="ajax-link" href="contact.html">Контакты</a></li>
     </ul>
@@ -79,10 +79,10 @@
 
     <div class="text-intro" id="site-type">
 
-      <h1>центр рекламы и маркетинговых услуг</h1>
+      <h1>центр рекламы и маркетинга</h1>
       <h1 class="typewrite"><span> </span></h1>
       <p>Каждый новый проект для нас это дорога в будущее, где пересекаются наши клиенты и их потребители.<br>
-         И нам важно, чтобы каждая их встреча была радостной.</p>
+        И нам важно, чтобы каждая их встреча была радостной.</p>
 
     </div>
 
@@ -91,15 +91,13 @@
     <!--Portfolio grid-->
     <div>
       <ul class="portfolio-grid" id="portfolio-sidebar">
-
-
         <li class="grid-item">
-          <img src="img/portfolio/1.jpg">
-          <a class="ajax-link" href="single.html">
+          <img src="img/portfolio/4.jpg">
+          <a class="ajax-link" href="#">
             <div class="grid-hover">
-              <h1>НАРУЖНАЯ РЕКЛАМА</h1>
-              <p>Вывески / Световые короба и объемные буквы / Паспортизация / Нестандартные рекламные конструкции /
-                Выставочное оборудование</p>
+              <h1>ПОЛИГРАФИЯ</h1>
+              <p>Визитки / Плакаты / Афиши / Листовки / Буклеты / Бейджи / Календари / Каталоги/ Дисконтные карты и
+                многое другое</p>
             </div>
           </a>
         </li>
@@ -127,12 +125,12 @@
         </li>
 
         <li class="grid-item">
-          <img src="img/portfolio/4.jpg">
-          <a class="ajax-link" href="#">
+          <img src="img/portfolio/1.jpg">
+          <a class="ajax-link" href="single.html">
             <div class="grid-hover">
-              <h1>ПОЛИГРАФИЯ</h1>
-              <p>Визитки / Плакаты / Афиши / Листовки / Буклеты / Бейджи / Календари / Каталоги/ Дисконтные карты и
-                многое другое</p>
+              <h1>НАРУЖНАЯ РЕКЛАМА</h1>
+              <p>Вывески / Световые короба и объемные буквы / Паспортизация / Нестандартные рекламные конструкции /
+                Выставочное оборудование</p>
             </div>
           </a>
         </li>
@@ -165,15 +163,26 @@
   </div>
   <!-- Clients -->
   <div class="swiper-container">
+    <h1>Наши клиенты</h1>
     <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/logo.min/65.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/69.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/66.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/73.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/72.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/28.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/34.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/68.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/60.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/70.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/1h.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/3h.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/26.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/44.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/45.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/50.jpg"></div>
+      <div class="swiper-slide"><img src="img/logo.min/60.jpg"></div>
 
-      <div class="swiper-slide"><img src="img/portfolio/1.jpg"></div>
-      <div class="swiper-slide"><img src="img/portfolio/1.jpg"></div>
-      <div class="swiper-slide"><img src="img/portfolio/1.jpg"></div>
-      <div class="swiper-slide"><img src="img/portfolio/1.jpg"></div>
-      <div class="swiper-slide"><img src="img/portfolio/1.jpg"></div>
-      <div class="swiper-slide"><img src="img/portfolio/1.jpg"></div>
-      <div class="swiper-slide"><img src="img/portfolio/1.jpg"></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -255,6 +264,24 @@
       slidesPerView: 6,
       spaceBetween: 30,
       slidesPerGroup: 6,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is <= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is <= 480px
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is <= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      },
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {
