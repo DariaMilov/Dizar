@@ -26,12 +26,13 @@ div .ajax-link img{
 	}
 
 p{
-  font-family: 'Raleway', sans-serif;
-  font-size:14px;
+  font-size:15px;
   font-weight: 400;
+  color: #5D5D5D;
 }
 
 a{
+  color: #5D5D5D;
   text-decoration:none;
   -webkit-transition: all 0.2s ease-in;
 	-moz-transition: all 0.2s ease-in;
@@ -48,6 +49,10 @@ a:focus {
 strong{
   font-weight:700;
 
+}
+
+.body_background {
+  background: url(../img/brush2.jpg) no-repeat;
 }
 
 /*
@@ -356,16 +361,16 @@ CONTENT
   float:left;
 }
 
-.two-column h2{
+.two-column h3{
   font-size: 13px;
   text-transform: uppercase;
-  color: #8d8d8d;
+  color: #5D5D5D;
   letter-spacing: 1px;
   font-weight: 900;
   line-height: 30px;
       margin-top: 22px;
 }
-}
+
 
 .one-column p{
   width:70% !important;
@@ -393,18 +398,26 @@ CONTENT
   margin: 150px auto 0;
 }
 
-.content .text-intro h1{
+h1{
   font-size:34px;
-  width:40%;
+  width:50%;
   text-transform:uppercase;
   color:#000000;
   font-weight:900;
   line-height:60px;
 }
 
+h2{
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 900;
+  line-height: 60px;
+}
+
 .content .text-intro p{
-  font-size:13px;
-  color:#8d8d8d;
+  font-size:15px;
+  color:#5D5D5D;
   margin-top:30px;
   font-weight:400;
   line-height:22px;
@@ -487,13 +500,13 @@ PORTFOLIO GRID
 }
 
 .prev-next a{
-  color:black;
+  color:#5D5D5D;
   font-weight:500;
   padding-bottom: 15px;
 }
 
 .prev-next a:hover{
-  border-bottom:1px solid black;
+  border-bottom:1px solid #5D5D5D;
 }
 
 .prev-button{
@@ -511,7 +524,10 @@ PORTFOLIO GRID
 }
 
 
-#ajax-content{width:100%;}
+#ajax-content{
+  width:100%;
+  margin-bottom: 150px;
+}
 
 .portfolio-grid{
   width:1170px;
@@ -530,7 +546,7 @@ li.grid-item{
   width:360px;
   position:relative;
   float:left;
-  padding:15px;
+  margin:15px;
 }
 
 .grid-hover{
@@ -555,21 +571,22 @@ li.grid-item{
 .grid-hover h1{
   font-size:23px;
   bottom:100px;
-  left:40px;
+  left: 25px;
   position:absolute;
   text-transform:uppercase;
   color: red;
   letter-spacing:1px;
   font-weight:900;
-  line-height:50px;
+  line-height:30px;
 }
 
 .grid-hover p{
   font-size:13px;
   bottom:40px;
-  left:40px;
+  left:25px;
+  right:25px;
   position:absolute;
-  color:#686868;
+  color:#5D5D5D;
   letter-spacing:1px;
   font-weight:400;
   line-height:14px;
@@ -587,10 +604,14 @@ li.grid-item img{
   width: 60%;
 }
 .swiper-wrapper img{
-  height: 150px;
+  width: 150px;
+  background-color: white;
+}
+.swiper-container .swiper-wrapper{
+margin-top: 50px;
 }
 .swiper-button-next{
-  color: #000000
+  color: #5D5D5D
 }
 /*
 **************************
@@ -619,7 +640,7 @@ footer{
 #footer-left{text-align:left;}
 
 .footer-margin .copyright{
-  color: #686868;
+  color: #5D5D5D;
   letter-spacing: 1px;
   font-size: 12px;
   width: 100%;
@@ -628,7 +649,7 @@ footer{
 }
 
 .footer-margin .social-footer{
-  color: #686868;
+  color: #5D5D5D;
   letter-spacing: 1px;
   font-size: 13px;
   width: 100%;
@@ -638,12 +659,16 @@ footer{
 
 .footer-margin .social-footer a{
   font-size:25px;
-  color:black;
+  color:#5D5D5D;
   padding: 20px;
 }
 
 .footer-margin .social-footer a:hover{
   color:#c3c3c3;
+}
+
+.footer{
+  height: 48px;
 }
 
 
@@ -665,10 +690,11 @@ CONTACT
   position:relative;
   float:left;
 }
-.contact-four{
-  width:100%;
-  position:relative;
-  float:left;
+.contact-four {
+  width: 100%;
+  position: relative;
+  float: left;
+  margin-bottom: 200px;
 }
 
 .contact-one p, .contact-two p, .contact-three p .contact-four p {
@@ -676,8 +702,8 @@ CONTACT
 }
 
 .content .text-intro p {
-  font-size: 13px;
-  color: #8d8d8d;
+  font-size: 14px;
+  color: #5D5D5D;
   margin-top: 30px;
   font-weight: 400;
   line-height: 22px;
@@ -691,10 +717,9 @@ input{
   height:40px;
   background:#f8f7f7;
   border:0;
-  color:#000000;
+  color:#5D5D5D;
   font-weight:500;
   line-height:40px;
-  font-family: 'Raleway', sans-serif;
   margin-bottom:10px;
   font-size:13px;
   padding-left:15px;
@@ -710,8 +735,7 @@ input.button-submit{
   background:#f8f7f7;
   font-weight:500;
   border:0;
-  font-family: 'Raleway', sans-serif;
-  color:#000000;
+  color:#5D5D5D;
   float:right;
   font-weight:900;
   line-height:40px;
@@ -729,9 +753,8 @@ textarea{
   border:0;
   line-height:40px;
   background:#f8f7f7;
-  color:#000000;
+  color:#5D5D5D;
   font-size:13px;
-  font-family: 'Raleway', sans-serif;
   font-weight:500;
   margin-bottom:10px;
   padding:0 0 0 15px;

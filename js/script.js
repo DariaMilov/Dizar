@@ -8,7 +8,7 @@ Load Page
 	$('body').waitForImages({
 		finished: function() {
 				Website();
-				$('body').jKit();
+				//$('body').jKit();
 		},
 		waitForAll: true
 	});
@@ -168,7 +168,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["НАРУЖНАЯ РЕКЛАМА", "ДИЗАЙН", "ПЛАСТИКОВЫЕ КАРТЫ", "ПОЛИГРАФИЯ", "МАРКЕТИНГОВЫЕ УСЛУГИ", "РЕКЛАМА В СМИ", ""],
+            strings: ["НАРУЖНАЯ РЕКЛАМА", "ДИЗАЙН", "ПЛАСТИКОВЫЕ КАРТЫ", "ПОЛИГРАФИЯ", "МАРКЕТИНГ", "МЕДИА-УСЛУГИ", ""],
             typeSpeed: 100,
             backDelay: 500,
             loop: false,

@@ -312,6 +312,10 @@
   .contact-one, .contact-two, .contact-three, .contact-four{
     width:100%;
   }
+
+  .contact-four {
+    margin-bottom: 50px;
+}
   
   textarea{
     height:250px;

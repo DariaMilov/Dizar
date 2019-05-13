@@ -9,7 +9,6 @@ $(function () {
 );
 
 function MainInit() {
-    debugger;
     InitGalary();
     function InitGalary() {
         lightbox.option({

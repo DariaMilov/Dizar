@@ -25,8 +25,7 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <!--Clients slider-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
 
 </head>
 
@@ -51,7 +50,7 @@
     </div>
 
     <ul class="menu-fullscreen">
-      <li><a class="ajax-link" href="single.html">Главная</a></li>
+      <li><a class="ajax-link" href="index.html">Главная</a></li>
       <li><a class="ajax-link" href="projects.html">Портфолио</a></li>
       <li><a class="ajax-link" href="about-us.html">О нас</a></li>
       <li><a class="ajax-link" href="contact.html">Контакты</a></li>
@@ -93,7 +92,7 @@
       <ul class="portfolio-grid" id="portfolio-sidebar">
         <li class="grid-item">
           <img src="img/portfolio/4.jpg">
-          <a class="ajax-link" href="#">
+          <a class="ajax-link" href="poligraf.html">
             <div class="grid-hover">
               <h1>ПОЛИГРАФИЯ</h1>
               <p>Визитки / Плакаты / Афиши / Листовки / Буклеты / Бейджи / Календари / Каталоги/ Дисконтные карты и
@@ -104,7 +103,7 @@
 
         <li class="grid-item">
           <img src="img/portfolio/2.jpg">
-          <a class="ajax-link" href="single-fullscreen.html">
+          <a class="ajax-link" href="design.html">
             <div class="grid-hover">
               <h1>ДИЗАЙН</h1>
               <p>Разработка логотипа и фирменного стиля/ Бренд-бук/ Дизайн полиграфической продукции / Дизайн упаковки /
@@ -115,7 +114,7 @@
 
         <li class="grid-item">
           <img src="img/portfolio/3.jpg">
-          <a class="ajax-link" href="#">
+          <a class="ajax-link" href="plastic.html">
             <div class="grid-hover">
               <h1>ПЛАСТИКОВЫЕ КАРТЫ</h1>
               <p>Любой вид пластика/ Матовое и глянцевое покрытие/ Магнитная полоса / Штрих-код/ Qr-код/ Полоса для
@@ -126,7 +125,7 @@
 
         <li class="grid-item">
           <img src="img/portfolio/1.jpg">
-          <a class="ajax-link" href="single.html">
+          <a class="ajax-link" href="outdoor.html">
             <div class="grid-hover">
               <h1>НАРУЖНАЯ РЕКЛАМА</h1>
               <p>Вывески / Световые короба и объемные буквы / Паспортизация / Нестандартные рекламные конструкции /
@@ -137,9 +136,9 @@
 
         <li class="grid-item">
           <img src="img/portfolio/5.jpg">
-          <a class="ajax-link" href="#">
+          <a class="ajax-link" href="marketing.html">
             <div class="grid-hover">
-              <h1>МАРКЕТИНГОВЫЕ УСЛУГИ</h1>
+              <h1>МАРКЕТИНГ</h1>
               <p>Брэндинг/ Стратегический маркетинг/ Маркетинговые исследования/ Разработка позиционирования/ Рекламные
                 кампании</p>
             </div>
@@ -148,9 +147,9 @@
 
         <li class="grid-item">
           <img src="img/portfolio/6.jpg">
-          <a class="ajax-link" href="#">
+          <a class="ajax-link" href="digital.html">
             <div class="grid-hover">
-              <h1>РЕКЛАМА В СМИ</h1>
+              <h1>МЕДИА-УСЛУГИ</h1>
               <p>Радио / ТВ / Печатные издания / Медиапланирование/ Интернет-ресурсы/ Контекстная и таргетированная
                 реклама</p>
             </div>
@@ -163,7 +162,9 @@
   </div>
   <!-- Clients -->
   <div class="swiper-container">
-    <h1>Наши клиенты</h1>
+    <h2>Наши клиенты</h2>
+    <p>Компании, которые нам доверяют и которым доверяем мы
+        </p>
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="img/logo.min/65.jpg"></div>
       <div class="swiper-slide"><img src="img/logo.min/69.jpg"></div>
@@ -184,11 +185,7 @@
       <div class="swiper-slide"><img src="img/logo.min/60.jpg"></div>
 
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+
   </div>
   <!-- End Clients -->
 
@@ -221,10 +218,11 @@
 
     <div class="footer-margin">
       <div class="social-footer">
-        <a href=""><i class="far fa-envelope-open"></i> </a>
-        <a href=""><i class="fa fa-university"></i> </a>
-        <a href=""> <i class="fa fa-fax"></i> </a>
-        <a href="https://www.instagram.com/dizar.by/"><i class="fab fa-instagram"></i></a>
+        <p class="footer">Наш адрес: Гродно Советская 4 оф. 22</p>
+        <p class="footer">
+          <a href="mailto:dizar@inbox.by"><i class="far fa-envelope-open"></i> </a>
+          <a href="tel:+375 152 770 332"> <i class="fas fa-phone"></i> </a>
+          <a href="https://www.instagram.com/dizar.by/"><i class="fab fa-instagram"></i></a></p>
 
       </div>
     </div>
@@ -256,14 +254,19 @@
   </script>
 
   <!--Clients slider-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 6,
       spaceBetween: 30,
-      slidesPerGroup: 6,
+      slidesPerGroup: 1,    // Disable preloading of all images
+      preloadImages: false,
+      // Enable lazy loading
+      lazy: true,
+      /*lazy: {
+        loadPrevNext: true,
+      },*/
       // Responsive breakpoints
       breakpoints: {
         // when window width is <= 320px
@@ -277,10 +280,14 @@
           spaceBetween: 20
         },
         // when window width is <= 640px
-        640: {
+        768: {
           slidesPerView: 3,
           spaceBetween: 30
         }
+      }
+      , autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
       },
       loop: true,
       loopFillGroupWithBlank: true,
