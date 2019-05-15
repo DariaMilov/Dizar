@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html lang="en">
 
@@ -21,7 +21,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/video.css">
-  <link rel="stylesheet" href="css/video.css">
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,7 +30,7 @@
 
 <body>
     <video class="video bottom" loop="loop" autoplay="" muted="">
-        <source src="5.mp4" type="video/mp4" />
+        <source src="video/5.mp4" type="video/mp4" />
       </video>
 
   <!--Preloader-->
@@ -66,6 +65,7 @@
 
     <div class="menu-index" id="button">
       <i class="fa fa-bars"></i>
+    </div>
 
   </header>
 
@@ -75,54 +75,55 @@
 
   <div class="content" id="ajax-content">
 
-    <div class="text-intro">
+      <div class="text-intro">
 
-      <h1>Обратная связь</h1>
-      <p></p>
-      Чтобы связаться с нами, пожалуйста, используйте данную контактную форму. При отправке файлов, пожалуйста,
-      используйте адрес электронной почты</p>
-
-      <form method="post" action="https://f-contact-us.azurewebsites.net/api/f-contact-us?code=Od/frHHvGBZAsDbDbtWpXDAyXtcBnwx5Cacs8k62K8sOQY6NB/Z82g==" data-jkit="[form:validateonly=true]" id="contact-form">
-
-        <div class="contact-one">
+          <h1>Обратная связь</h1>
           <p>
-            <label for="miniusername">Имя:</label><br />
-            <input name="miniusername" id="miniusername"
-              data-jkit="[validate:required=true;min=3;max=10;error=Please enter your username (3-10 characters)]">
+              Чтобы связаться с нами, пожалуйста, используйте данную контактную форму. При отправке файлов, пожалуйста,
+              используйте адрес электронной почты
           </p>
-        </div>
 
-        <div class="contact-two">
-          <p>
-            <label for="miniemail">E-mail:</label><br />
-            <input name="miniemail" id="miniemail"
-              data-jkit="[validate:required=true;strength=50;error=Please write your email]">
-          </p>
-        </div>
+          <form method="post" action="https://f-contact-us.azurewebsites.net/api/f-contact-us?code=Od/frHHvGBZAsDbDbtWpXDAyXtcBnwx5Cacs8k62K8sOQY6NB/Z82g==" data-jkit="[form:validateonly=true]" id="contact-form">
 
-        <div class="contact-three">
-          <p>
-            <label for="miniphone">Телефон:</label><br />
-            <input name="miniphone" id="miniphone"
-              data-jkit="[validate:required=true;min=11;max=13;error=Please enter your phone number]">
-          </p>
-        </div>
+              <div class="contact-one">
+                  <p>
+                      <label for="miniusername">Имя:</label><br />
+                      <input name="miniusername" id="miniusername"
+                             data-jkit="[validate:required=true;min=3;max=10;error=Please enter your username (3-10 characters)]">
+                  </p>
+              </div>
 
-        <div class="contact-four">
-          <p>
-            <label>Сообщение:</label><br />
-            <textarea id="message" name="message"></textarea><br /><br />
+              <div class="contact-two">
+                  <p>
+                      <label for="miniemail">E-mail:</label><br />
+                      <input name="miniemail" id="miniemail"
+                             data-jkit="[validate:required=true;strength=50;error=Please write your email]">
+                  </p>
+              </div>
 
-            <input class="button-submit" name="send" type="submit" value="Отправить" />
-          </p>
-        </div>
+              <div class="contact-three">
+                  <p>
+                      <label for="miniphone">Телефон:</label><br />
+                      <input name="miniphone" id="miniphone"
+                             data-jkit="[validate:required=true;min=11;max=13;error=Please enter your phone number]">
+                  </p>
+              </div>
 
-        <p>
-        </p>
-      </form>
+              <div class="contact-four">
+                  <p>
+                      <label>Сообщение:</label><br />
+                      <textarea id="message" name="message"></textarea><br /><br />
+
+                      <input class="button-submit" name="send" type="submit" value="Отправить" />
+                  </p>
+              </div>
+
+              <p>
+              </p>
+          </form>
 
 
-    </div>
+      </div>
 
   </div>
 

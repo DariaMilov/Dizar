@@ -27,11 +27,12 @@ div .ajax-link img{
 
 p{
   font-size:15px;
+  letter-spacing: 1px;
   font-weight: 400;
   color: #5D5D5D;
 }
 
-a{
+ a{
   color: #5D5D5D;
   text-decoration:none;
   -webkit-transition: all 0.2s ease-in;
@@ -41,6 +42,7 @@ a{
 	transition: all 0.2s ease-in; 
 	border-bottom:1px solid #dedede;
 }
+
 
 a:focus {
   outline:none;

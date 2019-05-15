@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 
 <html lang="en">
 
@@ -22,6 +22,8 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/video.css">
 
+  <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css">
+
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -30,226 +32,248 @@
 
 <body class="body_background">
 
-  <!--Preloader-->
+    <!--Preloader-->
 
-  <div class="preloader" id="preloader">
-    <div class="item">
-      <div class="spinner">
-      </div>
-    </div>
-  </div>
-
-  <div class="opacity-nav">
-
-    <div class="menu-index" id="buttons" style="z-index:999999">
-      <i class="fa  fa-close"></i>
+    <div class="preloader" id="preloader">
+        <div class="item">
+            <div class="spinner">
+            </div>
+        </div>
     </div>
 
-    <ul class="menu-fullscreen">
-      <li><a class="ajax-link" href="index.html">Главная</a></li>
-      <li><a class="ajax-link" href="projects.html">Портфолио</a></li>
-      <li><a class="ajax-link" href="about-us.html">О нас</a></li>
-      <li><a class="ajax-link" href="contact.html">Контакты</a></li>
-    </ul>
+    <div class="opacity-nav">
 
+        <div class="menu-index" id="buttons" style="z-index:999999">
+            <i class="fa  fa-close"></i>
+        </div>
 
-  </div>
+        <ul class="menu-fullscreen">
+            <li><a class="ajax-link" href="index.html">Главная</a></li>
+            <li><a class="ajax-link" href="projects.html">Портфолио</a></li>
+            <li><a class="ajax-link" href="about-us.html">О нас</a></li>
+            <li><a class="ajax-link" href="contact.html">Контакты</a></li>
+        </ul>
 
-
-  <!--Header-->
-  <header id="fullscreen">
-
-    <div class="logo" id="full"><a class="ajax-link" href="index.html"><img src="logo.png"></a></div>
-
-    <div class="menu-index" id="button">
-      <i class="fa fa-bars"></i>
-
-  </header>
-
-  <div class="clear"></div>
-
-  <!--Content-->
-
-  <div class="content" id="ajax-content">
-     
-
-
-    <div class="text-intro">
-
-      <h1>Наружная реклама</h1>
-
-
-      <div class="one-column">
-        <p>Центр рекламы и маркетинга</p>
-        <p><a href="">Перейти в портфолио</a></p>
-      
-      </div>
-
-
-      <div class="two-column">
-        <h2>Что мы делаем:</h2>
-        <h3>Объемные буквы </h3>
-        <p> Объемные буквы один из самых популярных современных видов рекламных вывесок. Они бывают двух видов -
-          световые объемные буквы и несветовые. Световые объемные буквы могут быть с внутренней светодиодной подсветкой и
-          подсветкой контражур. Основным преимуществом такого вида вывески является их эстетический вид. <br>
-          Такой вид вывески очень устойчив к погодным условиям. Вывеску можно легко адаптировать на новый фасад при
-          переезде. </p>
-        <h3>Световые короба</h3>
-        <p>Световые короба – это самый простой и самый востребованный вид световой рекламы. Световой короб может быть
-          любой нестандартной формы, может состоять из нескольких частей и объемов, дополнительно может быть
-          укомплектован различными декоративными элементами.Световые короба могут быть различного размера, толщины,
-          цвета. Могут содержать любое фото изображение.</p>
-        <h3>Кронштейн-плафоны</h3>
-        <p>Кронштейн-плафон– это рекламная конструкция, которая крепится перпендикулярно к фасаду здания. Чаще всего с
-          двусторонней подсветкой.<br>
-
-          Световые плафоны крепятся на металлический каркас, который может содержать элементы ковки. Кронштейн-плафон
-          может быть абсолютно любой формы, содержать объемные элементы, бегущую строку. <br>
-
-          Такие плафоны – самое популярное средство городской рекламы в местах плотной застройки, с узкими тротуарами и
-          пешеходными зонами.</p>
-        <h3>Изготовление комбинированных световых вывесок</h3>
-        <p>Это может быть одна или несколько вывесок в комплексе, содержащая в себе и объемные буквы и световые короба.
-          Вывески могут быть выполнены в несколько объемов, содержать подосновы, иметь разные виды подсветки, могут быть
-          любой нестандартной формы.<br>
-
-        </p>
-        <h3>Реклама на билбордах, Виниловые баннеры и растяжки</h3>
-        <p>Реклама на билбордах – один из самых эффективных и популярных средств наружной рекламы в городском
-          пространстве.<br>
-
-          Информация на билбордах должна привлечь внимание в течение 2 секунд, поэтому разработку дизайна стоит доверить
-          только тем дизайнерам, которые специализируются на таких разработках. Наши специалисты усилят эффективность
-          такой рекламы своими знаниями в области брендинга и маркетинга. Помните, что неправильно разработанный дизайн
-          билборда – это абсолютно впустую выброшенные деньги.</p>
-        <h3>Оформление витрин и мест продаж</h3>
-        <p>Оформление магазина формирует положительное, доверительное отношение у клиентов и создает правильный имидж.
-          Дизайн магазина должен соответствовать фирменному стилю, создавать правильную психологическую атмосферу и
-          стимулировать к покупке.<br>
-          Информационные стенды могут быть абсолютно разной формы – прямоугольные или нестандартные, объемные и плоские,
-          в несколько объемов или с отдельными объемными элементами, с подсветкой и без, с полками, ящиками, встроенными
-          шкафами.<br>
-
-          Стенды могут быть с информацией, нанесенной на основу, так и со сменной информацией в виде карманов любого
-          формата либо перелистывающейся книгой.</p>
-        <h3>Оформление музеев</h3>
-        <p>В последнее время компании с большим опытом и многолетней историей развития стремятся запечатлить историю
-          своего
-          предприятия и оформляют целые тематические музеи. Такие проекты делаются достоянием и гордостью предприятия,
-          потому что в них отражены этапы развития, достижения, особенности, памятные даты и большие события.<br>
-
-          Центр рекламы и маркетинга DIZAR единственное агентство в Гродно, которое не только оформляет сам музей, но и
-          разрабатывает концепцию с полной визуализацией такого проекта. Нами были успешно разработаны и выполнены музеи
-          Автобусный парк, Дорстрой, Белкард.<br>
-
-          Музей – это всегда индивидуальная работа, в которой могут быть задействованы любые абсолютно нестандартные
-          варианты и проекты.</p>
-
-
-      </div>
-
-      <div class="clear"></div>
-
-      <ul class="portfolio-grid">
-
-
-
-        <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-          <a class="example-image-link" href="img/portfolio/80.jpg" data-lightbox="tab-item-3" data-title=""><img
-              class="example-image" src="img/portfolio/80.jpg" alt="" /></a>
-        </li>
-
-        <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-          <a class="example-image-link" href="img/portfolio/96.jpg" data-lightbox="tab-item-3" data-title=""><img
-              class="example-image" src="img/portfolio/96.jpg" alt="" /></a>
-        </li>
-
-        <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-          <a class="example-image-link" href="img/portfolio/17.jpg" data-lightbox="tab-item-3" data-title=""><img
-              class="example-image" src="img/portfolio/17.jpg" alt="" /></a>
-        </li>
-
-        <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-          <a class="example-image-link" href="img/portfolio/41.jpg" data-lightbox="tab-item-3" data-title=""><img
-              class="example-image" src="img/portfolio/41.jpg" alt="" /></a>
-        </li>
-
-        <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-          <a class="example-image-link" href="img/portfolio/38.jpg" data-lightbox="tab-item-3" data-title=""><img
-              class="example-image" src="img/portfolio/38.jpg" alt="" /></a>
-        </li>
-
-
-        <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-          <a class="example-image-link" href="img/portfolio/74.jpg" data-lightbox="tab-item-3" data-title=""><img
-              class="example-image" src="img/portfolio/74.jpg" alt="" /></a>
-        </li>
-
-
-
-      </ul>
 
     </div>
+
+
+    <!--Header-->
+    <header id="fullscreen">
+
+        <div class="logo" id="full"><a class="ajax-link" href="index.html"><img src="logo.png"></a></div>
+
+        <div class="menu-index" id="button">
+            <i class="fa fa-bars"></i>
+        </div>
+
+    </header>
+
+    <div class="clear"></div>
+
+    <!--Content-->
+
+    <div class="content" id="ajax-content">
+
+
+
+        <div class="text-intro">
+
+            <h1>Наружная реклама</h1>
+
+
+            <div class="one-column">
+                <p>Центр рекламы и маркетинга</p>
+                <p><a href="">Перейти в портфолио</a></p>
+
+            </div>
+
+
+            <div class="two-column">
+                <h2>Что мы делаем:</h2>
+                <h3>Объемные буквы </h3>
+                <p>
+                    Объемные буквы один из самых популярных современных видов рекламных вывесок. Они бывают двух видов -
+                    световые объемные буквы и несветовые. Световые объемные буквы могут быть с внутренней светодиодной подсветкой и
+                    подсветкой контражур. Основным преимуществом такого вида вывески является их эстетический вид. <br>
+                    Такой вид вывески очень устойчив к погодным условиям. Вывеску можно легко адаптировать на новый фасад при
+                    переезде.
+                </p>
+                <h3>Световые короба</h3>
+                <p>
+                    Световые короба – это самый простой и самый востребованный вид световой рекламы. Световой короб может быть
+                    любой нестандартной формы, может состоять из нескольких частей и объемов, дополнительно может быть
+                    укомплектован различными декоративными элементами.Световые короба могут быть различного размера, толщины,
+                    цвета. Могут содержать любое фото изображение.
+                </p>
+                <h3>Кронштейн-плафоны</h3>
+                <p>
+                    Кронштейн-плафон– это рекламная конструкция, которая крепится перпендикулярно к фасаду здания. Чаще всего с
+                    двусторонней подсветкой.<br>
+
+                    Световые плафоны крепятся на металлический каркас, который может содержать элементы ковки. Кронштейн-плафон
+                    может быть абсолютно любой формы, содержать объемные элементы, бегущую строку. <br>
+
+                    Такие плафоны – самое популярное средство городской рекламы в местах плотной застройки, с узкими тротуарами и
+                    пешеходными зонами.
+                </p>
+                <h3>Изготовление комбинированных световых вывесок</h3>
+                <p>
+                    Это может быть одна или несколько вывесок в комплексе, содержащая в себе и объемные буквы и световые короба.
+                    Вывески могут быть выполнены в несколько объемов, содержать подосновы, иметь разные виды подсветки, могут быть
+                    любой нестандартной формы.<br>
+
+                </p>
+                <h3>Реклама на билбордах, Виниловые баннеры и растяжки</h3>
+                <p>
+                    Реклама на билбордах – один из самых эффективных и популярных средств наружной рекламы в городском
+                    пространстве.<br>
+
+                    Информация на билбордах должна привлечь внимание в течение 2 секунд, поэтому разработку дизайна стоит доверить
+                    только тем дизайнерам, которые специализируются на таких разработках. Наши специалисты усилят эффективность
+                    такой рекламы своими знаниями в области брендинга и маркетинга. Помните, что неправильно разработанный дизайн
+                    билборда – это абсолютно впустую выброшенные деньги.
+                </p>
+                <h3>Оформление витрин и мест продаж</h3>
+                <p>
+                    Оформление магазина формирует положительное, доверительное отношение у клиентов и создает правильный имидж.
+                    Дизайн магазина должен соответствовать фирменному стилю, создавать правильную психологическую атмосферу и
+                    стимулировать к покупке.<br>
+                    Информационные стенды могут быть абсолютно разной формы – прямоугольные или нестандартные, объемные и плоские,
+                    в несколько объемов или с отдельными объемными элементами, с подсветкой и без, с полками, ящиками, встроенными
+                    шкафами.<br>
+
+                    Стенды могут быть с информацией, нанесенной на основу, так и со сменной информацией в виде карманов любого
+                    формата либо перелистывающейся книгой.
+                </p>
+                <h3>Оформление музеев</h3>
+                <p>
+                    В последнее время компании с большим опытом и многолетней историей развития стремятся запечатлить историю
+                    своего
+                    предприятия и оформляют целые тематические музеи. Такие проекты делаются достоянием и гордостью предприятия,
+                    потому что в них отражены этапы развития, достижения, особенности, памятные даты и большие события.<br>
+
+                    Центр рекламы и маркетинга DIZAR единственное агентство в Гродно, которое не только оформляет сам музей, но и
+                    разрабатывает концепцию с полной визуализацией такого проекта. Нами были успешно разработаны и выполнены музеи
+                    Автобусный парк, Дорстрой, Белкард.<br>
+
+                    Музей – это всегда индивидуальная работа, в которой могут быть задействованы любые абсолютно нестандартные
+                    варианты и проекты.
+                </p>
+
+
+            </div>
+
+            <div class="clear"></div>
+
+            <ul class="portfolio-grid">
+
+
+
+                <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                    <a class="example-image-link" href="img/portfolio/80.jpg" data-lightbox="tab-item-3" data-title="">
+                        <img class="example-image" src="img/portfolio/80.jpg" alt="" />
+                    </a>
+                </li>
+
+                <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                    <a class="example-image-link" href="img/portfolio/96.jpg" data-lightbox="tab-item-3" data-title="">
+                        <img class="example-image" src="img/portfolio/96.jpg" alt="" />
+                    </a>
+                </li>
+
+                <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                    <a class="example-image-link" href="img/portfolio/17.jpg" data-lightbox="tab-item-3" data-title="">
+                        <img class="example-image" src="img/portfolio/17.jpg" alt="" />
+                    </a>
+                </li>
+
+                <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                    <a class="example-image-link" href="img/portfolio/41.jpg" data-lightbox="tab-item-3" data-title="">
+                        <img class="example-image" src="img/portfolio/41.jpg" alt="" />
+                    </a>
+                </li>
+
+                <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                    <a class="example-image-link" href="img/portfolio/38.jpg" data-lightbox="tab-item-3" data-title="">
+                        <img class="example-image" src="img/portfolio/38.jpg" alt="" />
+                    </a>
+                </li>
+
+
+                <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                    <a class="example-image-link" href="img/portfolio/74.jpg" data-lightbox="tab-item-3" data-title="">
+                        <img class="example-image" src="img/portfolio/74.jpg" alt="" />
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+
+        <div id="ajax-sidebar"></div>
+
+
+        <div class="prev-next">
+
+            <div class="prev-button"><a class="ajax-link" href="design.html">Назад</a></div>
+            <div class="next-button"><a class="ajax-link" href="plastic.html">Далее</a></div>
+
+        </div>
+    </div>
+
+
+
+    <!--Home Sidebar-->
 
     <div id="ajax-sidebar"></div>
 
 
-    <div class="prev-next">
+    <!--Footer-->
 
-      <div class="prev-button"><a class="ajax-link" href="design.html">Назад</a></div>
-      <div class="next-button"><a class="ajax-link" href="plastic.html">Далее</a></div>
+    <footer>
 
-    </div>
-  </div>
+        <div class="footer-margin">
+            <div class="social-footer">
+                <p class="footer">Наш адрес: Гродно Советская 4 оф. 22</p>
+                <p class="footer">
+                    <a href="mailto:dizar@inbox.by"><i class="far fa-envelope-open"></i> </a>
+                    <a href="tel:+375 152 770 332"> <i class="fas fa-phone"></i> </a>
+                    <a href="https://www.instagram.com/dizar.by/"><i class="fab fa-instagram"></i></a>
+                </p>
 
-  </div>
-
-
-
-  <!--Home Sidebar-->
-
-  <div id="ajax-sidebar"></div>
-
-
-  <!--Footer-->
-
-  <footer>
-
-      <div class="footer-margin">
-        <div class="social-footer">
-          <p class="footer">Наш адрес: Гродно Советская 4 оф. 22</p>
-          <p class="footer">
-            <a href="mailto:dizar@inbox.by"><i class="far fa-envelope-open"></i> </a>
-          <a href="tel:+375 152 770 332"> <i class="fas fa-phone"></i> </a>
-          <a href="https://www.instagram.com/dizar.by/"><i class="fab fa-instagram"></i></a></p>
-  
+            </div>
         </div>
-      </div>
-  
-  
+
+
     </footer>
 
 
 
-  <!--Scripts-->
+    <!--Scripts-->
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
-  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
-  <script src="js/typed.js" type="text/javascript"></script>
-  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
-  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-  <script src="js/jquery.jkit.1.2.16.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+    <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jkit.1.2.16.min.js"></script>
 
-  <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 
-  <script>
-    $('#button, #buttons').on('click', function () {
-      $(".opacity-nav").fadeToggle("slow", "linear");
-      // Animation complete.
-    });
-  </script>
+    <script src="node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+    <script>
+        $('#button, #buttons').on('click', function () {
+            $(".opacity-nav").fadeToggle("slow", "linear");
+            // Animation complete.
+        });
+    </script>
 
 
 </body>

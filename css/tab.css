@@ -1,141 +1,77 @@
-/* PORTFOLIO*/
- * {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	box-sizing: border-box;
-	outline: none;
-	font-weight: normal;
-}
-a {
-	color: #5D5D5D;
-	text-decoration: none;
-}
-.container {
-	width: 65%;
-	height: auto;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-/* Backend Panel Start */
-.clear-backend {
-    background: #fff;
-    width: 100%;
-    height: 800px;
-    position: relative;
-    margin: 30px 21px;
-}
-.clear-backend > input {
-	position: absolute;
-	filter: alpha(opacity=0);
-	opacity: 0;
-}
-.clear-backend > input:hover {
-	cursor: pointer;
-}
-.clear-backend > input:hover + span,
-.clear-backend > input:checked + span {
-	background: #fff;
-	font-size: 13px;
-	text-transform: uppercase;
-	color: #5D5D5D;
-	letter-spacing: 1px;
-	font-weight: 900;
-	line-height: 30px;
-	margin-top: 22px;
-}
-.clear-backend > input:checked + span + i {
-	color: #5D5D5D;
-	font-weight: 600;
-}
-.clear-backend > i {
-	position: absolute;
-	margin-top: -40px;
-	padding: 0 20px;
-	font-size: 20px;
-}
-.clear-backend > span,
-.clear-backend > i {
-	-webkit-transition: all .5s;
-	   -moz-transition: all .5s;
-		 -o-transition: all .5s;
-			transition: all .5s;
-}
-.clear-backend > input,
-.clear-backend > span {
-	background: #f0f0f0;
-	color: #5D5D5D;
-	display: block;
-	width: 200px;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-	z-index: 9;
-	text-transform: uppercase;
-}
-.tab-content {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: calc(100% - 200px);
-	height: 100%;
-	
-}
-.tab-content section {
-	position: absolute;
+#ajax-content {
 	width: 100%;
-	height: 100%;
-	padding: 20px;
-	display: none;
+	margin-bottom: 0px;
 }
-.clear-backend > input.tab-1:checked ~ .tab-content .tab-item-1 {
-	display: block;
+.content {
+	position: relative;
+	margin: 0px;
 }
-.clear-backend > input.tab-2:checked ~ .tab-content .tab-item-2 {
-	display: block;
-}
-.clear-backend > input.tab-3:checked ~ .tab-content .tab-item-3 {
-	display: block;
-}
-.clear-backend > input.tab-4:checked ~ .tab-content .tab-item-4 {
-	display: block;
-}
-.clear-backend > input.tab-5:checked ~ .tab-content .tab-item-5 {
-	display: block;
-}
-.clear-backend > input.tab-6:checked ~ .tab-content .tab-item-6 {
-	display: block;
-}
-.clear-backend > input.tab-7:checked ~ .tab-content .tab-item-7 {
-	display: block;
-}
-.clear-backend > input.tab-8:checked ~ .tab-content .tab-item-8 {
-	display: block;
-}
-.clear-backend > input.tab-9:checked ~ .tab-content .tab-item-9 {
-	display: block;
-}
-.clear-backend > input.tab-10:checked ~ .tab-content .tab-item-10 {
-	display: block;
+.cmp-flex-tabs {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.tab-content .example-image {
-	width: 200px; 	
+	input[data-flex-tab] {
+		display: none;
+		visibility: hidden;
+	}
+
+	.cmp-flex-tabs__tab {
+		width: 100%;
+		border-bottom: 0.125rem solid transparent;
+		cursor: pointer;
+	}
+
+.example-image{
+	width:30%;
+	padding: 15px;
 }
 
-/* Responsive */
-@media screen and (max-width: 1367px) {
-	.contain{
-	width: 60%;
-	
+.example-image-link{ 
+		text-decoration: none; 
+		border-bottom: 0;
 }
-}
-@media screen and (max-width: 1281px) {
-}
-@media screen and (max-width: 1025px) {
-}
-@media only screen and (max-width: 961px) {
-}
+label{
+	width: 25%;
+font-size: 13px;
+  text-transform: uppercase;
+  color: #5D5D5D;
+  letter-spacing: 1px;
+  font-weight: 900;
+  line-height: 30px;
+margin-top: 22px;
 
-@media only screen and (max-width: 481px) {
 }
+	@media (min-width: 64em) {
+		.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab {	
+			order: -1;
+			width: auto;
+			padding: 0px 10px;
+		}
+		.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab:not(:first-of-type) {
+			padding: 0px 10px;
+		}
+
+	}
+
+
+	.cmp-flex-tabs__content {
+		width: 100%;
+		max-height: 0;
+		opacity: 0;
+		overflow: hidden;
+		transition: opacity 0.3s ease-out;
+	}
+	input[data-flex-tab]:checked + .cmp-flex-tabs__tab {
+		border-color: currentColor;
+		padding: 0px 10px;
+	}
+	input[data-flex-tab]:checked + .cmp-flex-tabs__tab + .cmp-flex-tabs__content {
+		max-height: 150rem;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		
+		opacity: 1;
+		overflow-y: auto;
+		transition: opacity 0.3s ease-in;
+	}
