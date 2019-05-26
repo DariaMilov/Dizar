@@ -2,76 +2,80 @@
 	width: 100%;
 	margin-bottom: 0px;
 }
+
 .content {
 	position: relative;
 	margin: 0px;
 }
+
 .cmp-flex-tabs {
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 10px;
 }
 
-	input[data-flex-tab] {
-		display: none;
-		visibility: hidden;
-	}
+input[data-flex-tab] {
+	display: none;
+	visibility: hidden;
+}
 
-	.cmp-flex-tabs__tab {
-		width: 100%;
-		border-bottom: 0.125rem solid transparent;
-		cursor: pointer;
-	}
 
-.example-image{
-	width:30%;
+.cmp-flex-tabs__tab {
+	width: 100%;
+	border-bottom: 0.125rem solid transparent;
+	cursor: pointer;
+}
+
+.example-image {
+	width: 30%;
 	padding: 15px;
 }
 
-.example-image-link{ 
-		text-decoration: none; 
-		border-bottom: 0;
+.example-image-link {
+	text-decoration: none;
+	border-bottom: 0;
 }
-label{
+
+label {
 	width: 25%;
-font-size: 13px;
-  text-transform: uppercase;
-  color: #5D5D5D;
-  letter-spacing: 1px;
-  font-weight: 900;
-  line-height: 30px;
-margin-top: 22px;
-
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #5D5D5D;
+	letter-spacing: 1px;
+	font-weight: 900;
+	line-height: 30px;
+	margin-top: 22px;
 }
-	@media (min-width: 64em) {
-		.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab {	
-			order: -1;
-			width: auto;
-			padding: 0px 10px;
-		}
-		.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab:not(:first-of-type) {
-			padding: 0px 10px;
-		}
 
+@media (min-width: 64em) {
+	.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab {
+		order: -1;
+		width: auto;
+		padding: 11px 29px;;
 	}
+	.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab:not(:first-of-type) {
+		padding: 11px 29px;;
+	}
+}
 
+.cmp-flex-tabs__content {
+	width: 100%;
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 0.3s ease-out;
+}
 
-	.cmp-flex-tabs__content {
-		width: 100%;
-		max-height: 0;
-		opacity: 0;
-		overflow: hidden;
-		transition: opacity 0.3s ease-out;
-	}
-	input[data-flex-tab]:checked + .cmp-flex-tabs__tab {
-		border-color: currentColor;
-		padding: 0px 10px;
-	}
-	input[data-flex-tab]:checked + .cmp-flex-tabs__tab + .cmp-flex-tabs__content {
-		max-height: 150rem;
-		padding-top: 1em;
-		padding-bottom: 1em;
-		
-		opacity: 1;
-		overflow-y: auto;
-		transition: opacity 0.3s ease-in;
-	}
+input[data-flex-tab]:checked+.cmp-flex-tabs__tab {
+	border-color: currentColor;
+	padding: 11px 29px;;
+}
+
+input[data-flex-tab]:checked+.cmp-flex-tabs__tab+.cmp-flex-tabs__content {
+	max-height: 1500rem;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	opacity: 1;
+	overflow-y: auto;
+	transition: opacity 0.3s ease-in;
+}

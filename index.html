@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="css/video.css">
+  
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -34,6 +35,7 @@
   <video class="video" loop="loop" autoplay="" muted="">
     <source src="video/3.mp4" type="video/mp4" />
   </video>
+  
   <!--Preloader-->
 
   <div class="preloader" id="preloader">
@@ -62,7 +64,13 @@
   <!--Header-->
   <header id="fullscreen">
 
-    <div class="logo" id="full"><a class="ajax-link" href="index.html"><img src="logo.png"></a></div>
+    <div class="logo" id="full">
+      <p class="logo"><a class="ajax-link" href="index.html"><img src="logo.png"></a></p>
+      <p class="logo phone">+375 152 770332<br>
+       +375 152 730277<br>
+       +375 29 6254237</p>
+      </div>
+      
 
     <div class="menu-index" id="button">
       <i class="fa fa-bars"></i>
@@ -93,7 +101,7 @@
       <ul class="portfolio-grid" id="portfolio-sidebar">
         <li class="grid-item">
           <img src="img/portfolio/4.jpg">
-          <a class="ajax-link" href="poligraf.html">
+          <a class="ajax-link" href="projects.html#poligraf">
             <div class="grid-hover">
               <h1>ПОЛИГРАФИЯ</h1>
               <p>Визитки / Плакаты / Афиши / Листовки / Буклеты / Бейджи / Календари / Каталоги/ Дисконтные карты и
@@ -104,7 +112,7 @@
 
         <li class="grid-item">
           <img src="img/portfolio/2.jpg">
-          <a class="ajax-link" href="design.html">
+          <a class="ajax-link" href="projects.html#design">
             <div class="grid-hover">
               <h1>ДИЗАЙН</h1>
               <p>Разработка логотипа и фирменного стиля/ Бренд-бук/ Дизайн полиграфической продукции / Дизайн упаковки /
@@ -114,8 +122,8 @@
         </li>
 
         <li class="grid-item">
-          <img src="img/portfolio/3.jpg">
-          <a class="ajax-link" href="plastic.html">
+          <img src="img/portfolio/98.jpg">
+          <a class="ajax-link" href="projects.html#plastic">
             <div class="grid-hover">
               <h1>ПЛАСТИКОВЫЕ КАРТЫ</h1>
               <p>Любой вид пластика/ Матовое и глянцевое покрытие/ Магнитная полоса / Штрих-код/ Qr-код/ Полоса для
@@ -125,8 +133,8 @@
         </li>
 
         <li class="grid-item">
-          <img src="img/portfolio/1.jpg">
-          <a class="ajax-link" href="outdoor.html">
+          <img src="img/portfolio/53.jpg">
+          <a class="ajax-link" href="projects.html#outdoor">
             <div class="grid-hover">
               <h1>НАРУЖНАЯ РЕКЛАМА</h1>
               <p>Вывески / Световые короба и объемные буквы / Паспортизация / Нестандартные рекламные конструкции /
@@ -137,7 +145,7 @@
 
         <li class="grid-item">
           <img src="img/portfolio/5.jpg">
-          <a class="ajax-link" href="marketing.html">
+          <a class="ajax-link" href="projects.html#marketing">
             <div class="grid-hover">
               <h1>МАРКЕТИНГ</h1>
               <p>Брэндинг/ Стратегический маркетинг/ Маркетинговые исследования/ Разработка позиционирования/ Рекламные
@@ -148,7 +156,7 @@
 
         <li class="grid-item">
           <img src="img/portfolio/6.jpg">
-          <a class="ajax-link" href="digital.html">
+          <a class="ajax-link" href="projects.html#digital">
             <div class="grid-hover">
               <h1>МЕДИА-УСЛУГИ</h1>
               <p>Радио / ТВ / Печатные издания / Медиапланирование/ Интернет-ресурсы/ Контекстная и таргетированная
@@ -213,6 +221,7 @@
   </div>
 
 
+
   <!--Footer-->
 
   <footer>
@@ -248,61 +257,12 @@
   <script src="js/script.js" type="text/javascript"></script>
 
 
-  <script>
-    $('#button, #buttons').on('click', function () {
-      $(".opacity-nav").fadeToggle("slow", "linear");
-      // Animation complete.
-    });
-  </script>
+ 
 
   <!--Clients slider-->
   <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 6,
-      spaceBetween: 30,
-      slidesPerGroup: 1,    // Disable preloading of all images
-      preloadImages: false,
-      // Enable lazy loading
-      lazy: true,
-      /*lazy: {
-        loadPrevNext: true,
-      },*/
-      // Responsive breakpoints
-      breakpoints: {
-        // when window width is <= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
-        // when window width is <= 480px
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
-        // when window width is <= 640px
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30
-        }
-      }
-      , autoplay: {
-        delay: 2000,
-        disableOnInteraction: false
-      },
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+  <script src="js/swiper.js"></script>
+
 
 </body>
 
