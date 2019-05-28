@@ -45,6 +45,7 @@ label {
 	line-height: 30px;
 	margin-top: 22px;
 	background-color: #d3d3d330;
+	text-align: center;
 }
 
 @media (min-width: 64em) {
@@ -52,12 +53,10 @@ label {
 		order: -1;
 		width: auto;
 		padding: 11px 29px;
-	
 	}
 	.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab:not(:first-of-type) {
 		padding: 11px 29px;
-		
-	}
+}
 }
 
 .cmp-flex-tabs__content {
@@ -66,13 +65,11 @@ label {
 	opacity: 0;
 	overflow: hidden;
 	transition: opacity 0.3s ease-out;
-	
 }
 
 input[data-flex-tab]:checked+.cmp-flex-tabs__tab {
 	border-color: currentColor;
 	padding: 11px 29px;
-	
 }
 
 input[data-flex-tab]:checked+.cmp-flex-tabs__tab+.cmp-flex-tabs__content {

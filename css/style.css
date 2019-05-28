@@ -48,6 +48,9 @@ a {
 a:focus {
   outline: none;
 }
+.example-image-link {
+  border-bottom: 0;
+}
 
 strong {
   font-weight: 700;
@@ -55,6 +58,14 @@ strong {
 
 .body_background {
   background: url(../img/brush2.jpg) no-repeat;
+}
+
+.about_background {
+  background: url(../img/s.jpg) no-repeat;
+    -moz-background-size: 100%; 
+    -webkit-background-size: 100%;
+    -o-background-size: 100%; 
+    background-size: 100%;
 }
 
 /*
@@ -692,7 +703,7 @@ CONTACT
   width: 100%;
   position: relative;
   float: left;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .contact-one p, .contact-two p, .contact-three p .contact-four p {
@@ -773,3 +784,68 @@ textarea:focus {
   background: #f4f4f4;
   height: 250px;
 }
+
+/*
+**************************
+NUMBERS
+**************************
+*/
+
+.wrapper {
+  text-align: center;	
+}
+.wrapper div {
+  display: inline-block;
+  width: 200px;
+  margin: 89px 20px 89px 20px;
+}
+
+.count {
+  display: inline-block;
+  font-size: 100px;
+  font-weight: 900;
+}
+.wrapper .all-wrapp .for-count {
+  margin-top: 0px;
+}
+
+/*
+**************************
+MAP
+**************************
+*/
+.map {
+    overflow: hidden;
+    width: 1140px;
+    position: relative;
+    margin: 0 auto 0;
+}
+
+iframe {
+  width: 1140px; 
+  height: 600px;
+}
+
+#gmap_canvas img {
+  max-width: none !important;
+  background: none !important
+}
+
+.map-small {
+position: absolute;
+width: 80%;
+bottom: 10px;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+color: #000;
+text-align: center;
+}
+
+small {
+  line-height: 1.8;
+  font-size: 2px;
+  background: #fff;
+}
+

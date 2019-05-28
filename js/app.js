@@ -23,6 +23,9 @@ function MainInit() {
 
 function OpenTab() {
     var loc = window.location.hash;
+    if (loc == "")
+        return;
+        
     var index = tabs.indexOf(loc);
     document.querySelectorAll('input[data-flex-tab]')[index].checked = true;
 }
