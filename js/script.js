@@ -22,7 +22,7 @@ $(function () {
   /*-------------------------------------------
   Ajax link page transitions
   ---------------------------------------------*/
-
+/*
   	$("a.ajax-link").live("click", function(){
       $this = $(this);
       var link = $this.attr('href');
@@ -34,7 +34,6 @@ $(function () {
         processData:true, 
         dataType:'html', 
         success:function(data){
-          debugger;
           document.title = $(data).filter('title').text(); 
           current_url = link;
           if (typeof history.pushState != 'undefined') history.pushState(data, 'Page', link);
@@ -64,7 +63,7 @@ $(function () {
       return false;
     });
   
-
+  */
   /*-------------------------------------------
   When you click back arrow
   ---------------------------------------------*/

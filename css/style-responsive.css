@@ -193,6 +193,7 @@
   }
   .grid-hover, li.grid-item, li.grid-item img {
     width: 400px;
+      height: 300px;
   }
 }
 
@@ -297,6 +298,7 @@
   }
   .grid-hover, li.grid-item, li.grid-item img {
     width: 250px;
+      height: 189px;
   }
 }
 
