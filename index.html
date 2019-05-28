@@ -1,6 +1,6 @@
 ﻿<!doctype html>
 
-<html lang="en">
+<html>
 
 <head>
 
@@ -20,314 +20,302 @@
     <link rel="stylesheet" href="css/tab.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/video.css">
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <!--Clients slider-->
     <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
-    
-    <link rel="stylesheet" href="css/animation.css"/>
+    <link rel="stylesheet" href="css/animation.css" />
 
 </head>
 
 <body>
 
-  <video class="video" loop="loop" autoplay="" muted="">
-    <source src="video/3.mp4" type="video/mp4" />
-  </video>
-  
-  <!--Preloader-->
+    <video class="video" loop="loop" autoplay="" muted="">
+        <source src="video/3.mp4" type="video/mp4" />
+    </video>
 
-  <div class="preloader" id="preloader">
-    <div class="item">
-      <div class="spinner">
-      </div>
-    </div>
-  </div>
+    <!--Preloader-->
 
-  <div class="opacity-nav">
-
-    <div class="menu-index" id="buttons" style="z-index:999999">
-      <i class="fa  fa-close"></i>
+    <div class="preloader" id="preloader">
+        <div class="item">
+            <div class="spinner"></div>
+        </div>
     </div>
 
-    <ul class="menu-fullscreen">
-      <li><a class="ajax-link" href="index.html">Главная</a></li>
-      <li><a class="ajax-link" href="projects.html">Портфолио</a></li>
-      <li><a class="ajax-link" href="about-us.html">О нас</a></li>
-      <li><a class="ajax-link" href="contact.html">Контакты</a></li>
-    </ul>
+    <div class="opacity-nav">
 
-  </div>
+        <div class="menu-index" id="buttons" style="z-index:999999">
+            <i class="fa  fa-close"></i>
+        </div>
 
-
-  <!--Header-->
-  <header id="fullscreen">
-
-    <div class="logo" id="full">
-      <p class="logo"><a class="ajax-link" href="index.html"><img src="logo.png"></a></p>
-      <p class="logo phone">+375 152 770332<br>
-       +375 152 730277<br>
-       +375 29 6254237</p>
-      </div>
-      
-
-    <div class="menu-index" id="button">
-      <i class="fa fa-bars"></i>
-    </div>
-
-  </header>
-
-  <div class="clear"></div>
-
-  <!--Content-->
-
-  <div class="content" id="ajax-content">
-
-
-    <div class="text-intro" id="site-type">
-
-      <h1>центр рекламы и маркетинга</h1>
-      <h1 class="typewrite"><span> </span></h1>
-      <p>Каждый новый проект для нас это дорога в будущее, где пересекаются наши клиенты и их потребители.<br>
-        И нам важно, чтобы каждая их встреча была радостной.</p>
+        <ul class="menu-fullscreen">
+            <li><a class="ajax-link" href="index.html">Главная</a></li>
+            <li><a class="ajax-link" href="projects.html">Портфолио</a></li>
+            <li><a class="ajax-link" href="about-us.html">О нас</a></li>
+            <li><a class="ajax-link" href="contact.html">Контакты</a></li>
+        </ul>
 
     </div>
 
 
+    <!--Header-->
+    <header id="fullscreen">
 
-    <!--Portfolio grid-->
-    <div>
-      <ul class="portfolio-grid" id="portfolio-sidebar">
-        <li class="grid-item">
-            <div class="composition">
-                <div class="frame">
-                    <div class="frame__face frame__face--front" style="background-image: url('img/portfolio/4.jpg')">
-                        <a class="ajax-link" href="projects.html#poligraf">
-                            <div class="grid-hover">
-                                <h1>ПОЛИГРАФИЯ</h1>
-                                <p>Визитки / Плакаты / Афиши / Листовки / Буклеты / Бейджи / Календари / Каталоги/ Дисконтные карты и
-                                    многое другое</p>
+        <div class="logo" id="full">
+            <p class="logo"><a class="ajax-link" href="index.html"><img src="img/logo.png"></a></p>
+            <p class="logo phone">+375 152 770332<br>
+                +375 152 730277<br>
+                +375 29 6254237</p>
+        </div>
+
+        <div class="menu-index" id="button">
+            <i class="fa fa-bars"></i>
+        </div>
+
+    </header>
+
+    <!--Content-->
+
+    <div class="content" id="ajax-content">
+
+        <div class="text-intro" id="site-type">
+            <h1>центр рекламы и маркетинга</h1>
+            <h1 class="typewrite"><span> </span></h1>
+            <p class="index-p">Каждый новый проект для нас это дорога в будущее, где пересекаются наши клиенты и их потребители.
+                И нам важно, чтобы каждая их встреча была радостной.</p>
+        </div>
+
+        <!--Portfolio grid-->
+
+        <div>
+            <ul class="portfolio-grid" id="portfolio-sidebar">
+                <li class="grid-item">
+                    <div class="composition">
+                        <div class="frame">
+                            <div class="frame__face frame__face--front"
+                                style="background-image: url('img/portfolio/4.jpg')">
+                                <a class="ajax-link" href="projects.html#poligraf">
+                                    <div class="grid-hover">
+                                        <h1>ПОЛИГРАФИЯ</h1>
+                                        <p>Визитки / Плакаты / Афиши / Листовки / Буклеты / Бейджи / Календари /
+                                            Каталоги/ Дисконтные карты и
+                                            многое другое</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div class="frame__face frame__face--back"></div>
+                            <div class="frame__face frame__face--left"></div>
+                            <div class="frame__face frame__face--right"></div>
+                            <div class="frame__face frame__face--top"></div>
+                            <div class="frame__face frame__face--bottom"></div>
+                        </div>
                     </div>
-                    <div class="frame__face frame__face--back"></div>
-                    <div class="frame__face frame__face--left"></div>
-                    <div class="frame__face frame__face--right"></div>
-                    <div class="frame__face frame__face--top"></div>
-                    <div class="frame__face frame__face--bottom"></div>
-                </div>
-            </div>
-        </li>
+                </li>
 
-        <li class="grid-item">
-            <div class="composition">
-                <div class="frame">
-                    <div class="frame__face frame__face--front" style="background-image: url('img/portfolio/2.jpg')">
-                        <a class="ajax-link" href="projects.html#design">
-                            <div class="grid-hover">
-                                <h1>ДИЗАЙН</h1>
-                                <p>Разработка логотипа и фирменного стиля/ Бренд-бук/ Дизайн полиграфической продукции / Дизайн упаковки /
-                                    Дизайн наружного и внутреннего оформления</p>
+                <li class="grid-item">
+                    <div class="composition">
+                        <div class="frame">
+                            <div class="frame__face frame__face--front"
+                                style="background-image: url('img/portfolio/2.jpg')">
+                                <a class="ajax-link" href="projects.html#design">
+                                    <div class="grid-hover">
+                                        <h1>ДИЗАЙН</h1>
+                                        <p>Разработка логотипа и фирменного стиля/ Бренд-бук/ Дизайн полиграфической
+                                            продукции / Дизайн упаковки /
+                                            Дизайн наружного и внутреннего оформления</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div class="frame__face frame__face--back"></div>
+                            <div class="frame__face frame__face--left"></div>
+                            <div class="frame__face frame__face--right"></div>
+                            <div class="frame__face frame__face--top"></div>
+                            <div class="frame__face frame__face--bottom"></div>
+                        </div>
                     </div>
-                    <div class="frame__face frame__face--back"></div>
-                    <div class="frame__face frame__face--left"></div>
-                    <div class="frame__face frame__face--right"></div>
-                    <div class="frame__face frame__face--top"></div>
-                    <div class="frame__face frame__face--bottom"></div>
-                </div>
-            </div>
-        </li>
+                </li>
 
-        <li class="grid-item">
-            <div class="composition">
-                <div class="frame">
-                    <div class="frame__face frame__face--front" style="background-image: url('img/portfolio/98.jpg')">
-                        <a class="ajax-link" href="projects.html#plastic">
-                            <div class="grid-hover">
-                                <h1>ПЛАСТИКОВЫЕ КАРТЫ</h1>
-                                <p>Любой вид пластика/ Матовое и глянцевое покрытие/ Магнитная полоса / Штрих-код/ Qr-код/ Полоса для
-                                    подписи/ Тиснение на карте/ Эмбосирование</p>
+                <li class="grid-item">
+                    <div class="composition">
+                        <div class="frame">
+                            <div class="frame__face frame__face--front"
+                                style="background-image: url('img/portfolio/98.jpg')">
+                                <a class="ajax-link" href="projects.html#plastic">
+                                    <div class="grid-hover">
+                                        <h1>ПЛАСТИКОВЫЕ КАРТЫ</h1>
+                                        <p>Любой вид пластика/ Матовое и глянцевое покрытие/ Магнитная полоса /
+                                            Штрих-код/ Qr-код/ Полоса для
+                                            подписи/ Тиснение на карте/ Эмбосирование</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div class="frame__face frame__face--back"></div>
+                            <div class="frame__face frame__face--left"></div>
+                            <div class="frame__face frame__face--right"></div>
+                            <div class="frame__face frame__face--top"></div>
+                            <div class="frame__face frame__face--bottom"></div>
+                        </div>
                     </div>
-                    <div class="frame__face frame__face--back"></div>
-                    <div class="frame__face frame__face--left"></div>
-                    <div class="frame__face frame__face--right"></div>
-                    <div class="frame__face frame__face--top"></div>
-                    <div class="frame__face frame__face--bottom"></div>
-                </div>
-            </div>
-        </li>
+                </li>
 
-        <li class="grid-item">
-            <div class="composition">
-                <div class="frame">
-                    <div class="frame__face frame__face--front" style="background-image: url('img/portfolio/53.jpg')">
-                        <a class="ajax-link" href="projects.html#outdoor">
-                            <div class="grid-hover">
-                                <h1>НАРУЖНАЯ РЕКЛАМА</h1>
-                                <p>Вывески / Световые короба и объемные буквы / Паспортизация / Нестандартные рекламные конструкции /
-                                    Выставочное оборудование</p>
+                <li class="grid-item">
+                    <div class="composition">
+                        <div class="frame">
+                            <div class="frame__face frame__face--front"
+                                style="background-image: url('img/portfolio/53.jpg')">
+                                <a class="ajax-link" href="projects.html#outdoor">
+                                    <div class="grid-hover">
+                                        <h1>НАРУЖНАЯ РЕКЛАМА</h1>
+                                        <p>Вывески / Световые короба и объемные буквы / Паспортизация / Нестандартные
+                                            рекламные конструкции /
+                                            Выставочное оборудование</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div class="frame__face frame__face--back"></div>
+                            <div class="frame__face frame__face--left"></div>
+                            <div class="frame__face frame__face--right"></div>
+                            <div class="frame__face frame__face--top"></div>
+                            <div class="frame__face frame__face--bottom"></div>
+                        </div>
                     </div>
-                    <div class="frame__face frame__face--back"></div>
-                    <div class="frame__face frame__face--left"></div>
-                    <div class="frame__face frame__face--right"></div>
-                    <div class="frame__face frame__face--top"></div>
-                    <div class="frame__face frame__face--bottom"></div>
-                </div>
-            </div>
-        </li>
+                </li>
 
-        <li class="grid-item">
-            <div class="composition">
-                <div class="frame">
-                    <div class="frame__face frame__face--front" style="background-image: url('img/portfolio/5.jpg')">
-                        <a class="ajax-link" href="projects.html#marketing">
-                            <div class="grid-hover">
-                                <h1>МАРКЕТИНГ</h1>
-                                <p>Брэндинг/ Стратегический маркетинг/ Маркетинговые исследования/ Разработка позиционирования/ Рекламные
-                                    кампании</p>
+                <li class="grid-item">
+                    <div class="composition">
+                        <div class="frame">
+                            <div class="frame__face frame__face--front"
+                                style="background-image: url('img/portfolio/5.jpg')">
+                                <a class="ajax-link" href="projects.html#marketing">
+                                    <div class="grid-hover">
+                                        <h1>МАРКЕТИНГ</h1>
+                                        <p>Брэндинг/ Стратегический маркетинг/ Маркетинговые исследования/ Разработка
+                                            позиционирования/ Рекламные
+                                            кампании</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div class="frame__face frame__face--back"></div>
+                            <div class="frame__face frame__face--left"></div>
+                            <div class="frame__face frame__face--right"></div>
+                            <div class="frame__face frame__face--top"></div>
+                            <div class="frame__face frame__face--bottom"></div>
+                        </div>
                     </div>
-                    <div class="frame__face frame__face--back"></div>
-                    <div class="frame__face frame__face--left"></div>
-                    <div class="frame__face frame__face--right"></div>
-                    <div class="frame__face frame__face--top"></div>
-                    <div class="frame__face frame__face--bottom"></div>
-                </div>
-            </div>
-        </li>
+                </li>
 
-        <li class="grid-item">
-            <div class="composition">
-                <div class="frame">
-                    <div class="frame__face frame__face--front" style="background-image: url('img/portfolio/6.jpg')">
-                        <a class="ajax-link" href="projects.html#digital">
-                            <div class="grid-hover">
-                                <h1>МЕДИА-УСЛУГИ</h1>
-                                <p>Радио / ТВ / Печатные издания / Медиапланирование/ Интернет-ресурсы/ Контекстная и таргетированная
-                                    реклама</p>
+                <li class="grid-item">
+                    <div class="composition">
+                        <div class="frame">
+                            <div class="frame__face frame__face--front"
+                                style="background-image: url('img/portfolio/6.jpg')">
+                                <a class="ajax-link" href="projects.html#digital">
+                                    <div class="grid-hover">
+                                        <h1>МЕДИА-УСЛУГИ</h1>
+                                        <p>Радио / ТВ / Печатные издания / Медиапланирование/ Интернет-ресурсы/
+                                            Контекстная и таргетированная
+                                            реклама</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            <div class="frame__face frame__face--back"></div>
+                            <div class="frame__face frame__face--left"></div>
+                            <div class="frame__face frame__face--right"></div>
+                            <div class="frame__face frame__face--top"></div>
+                            <div class="frame__face frame__face--bottom"></div>
+                        </div>
                     </div>
-                    <div class="frame__face frame__face--back"></div>
-                    <div class="frame__face frame__face--left"></div>
-                    <div class="frame__face frame__face--right"></div>
-                    <div class="frame__face frame__face--top"></div>
-                    <div class="frame__face frame__face--bottom"></div>
-                </div>
-            </div>
-        </li>
-
-      </ul>
-
-    </div>
-  </div>
-  <!-- Clients -->
-  <div class="swiper-container">
-    <h2>Наши клиенты</h2>
-    <p>Компании, которые нам доверяют и которым доверяем мы
-        </p>
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="img/logo.min/65.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/69.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/66.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/73.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/72.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/28.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/34.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/68.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/60.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/70.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/1h.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/3h.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/26.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/44.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/45.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/50.jpg"></div>
-      <div class="swiper-slide"><img src="img/logo.min/60.jpg"></div>
-
+                </li>
+            </ul>
+        </div>
     </div>
 
-  </div>
-  <!-- End Clients -->
+    <!-- Clients -->
 
-  <!--Home Sidebar-->
-
-  <div id="ajax-sidebar">
-
-    <div class="home-sidebar" style="background-image:url('img/home-sidebar.jpg')" id="hero">
-
-      <div class="parallax-option" data-jkit="[parallax:strength=0.8;axis=both]">
-
-        <div class="parallax parallax1"><img src="img/business-card-2.png"></div>
-
-      </div>
-
-      <div class="parallax-option" data-jkit="[parallax:strength=0.3;axis=both]">
-
-        <div class="parallax parallax1"><img src="img/business-card.png"></div>
-
-      </div>
-
+    <div class="swiper-container">
+        <h2>Наши клиенты</h2>
+        <p>Компании, которые нам доверяют и которым доверяем мы!</p>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/logo.min/65.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/69.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/66.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/73.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/72.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/28.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/34.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/68.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/60.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/70.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/1h.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/3h.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/26.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/44.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/45.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/50.jpg"></div>
+            <div class="swiper-slide"><img src="img/logo.min/60.jpg"></div>
+        </div>
     </div>
 
-  </div>
+    <!--Home Sidebar-->
+
+    <div id="ajax-sidebar">
+        <div class="home-sidebar">
+            <div class="parallax-option" data-jkit="[parallax:strength=0.9;axis=both]">
+                <div class="parallax parallax1"><img src="img/business-card-2.png"></div>
+            </div>
+
+            <div class="parallax-option" data-jkit="[parallax:strength=0.7;axis=both]">
+                <div class="parallax parallax1"><img src="img/business-card-21.png"></div>
+            </div>
+
+            <div class="parallax-option" data-jkit="[parallax:strength=0.3;axis=both]">
+                <div class="parallax parallax1"><img src="img/business-card.png"></div>
+            </div>
+        </div>
+    </div>
 
 
 
-  <!--Footer-->
+    <!--Footer-->
 
-  <footer>
+    <footer>
 
-      <div class="footer-margin">
-          <div class="social-footer">
-              <p class="footer">Наш адрес: Гродно Советская 4 оф. 22</p>
-              <p class="footer">
-                  <a href="mailto:dizar@inbox.by"><i class="far fa-envelope-open"></i> </a>
-                  <a href="tel:+375 152 770 332"> <i class="fas fa-phone"></i> </a>
-                  <a href="https://www.instagram.com/dizar.by/"><i class="fab fa-instagram"></i></a>
-              </p>
-
-          </div>
-      </div>
-
-
-  </footer>
+        <div class="footer-margin">
+            <div class="social-footer">
+                <p class="footer">Наш адрес: Гродно Советская 4 оф. 22</p>
+                <p class="footer">
+                    <a href="mailto:dizar@inbox.by"><i class="far fa-envelope-open"></i> </a>
+                    <a href="tel:+375 152 770 332"> <i class="fas fa-phone"></i> </a>
+                    <a href="https://www.instagram.com/dizar.by/"><i class="fab fa-instagram"></i></a>
+                </p>
+            </div>
+        </div>
 
 
-
-  <!--Scripts-->
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
-  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
-  <script src="js/typed.js" type="text/javascript"></script>
-  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
-  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-  <script src="js/jquery.jkit.1.2.16.min.js"></script>
-
-  <script src="js/script.js" type="text/javascript"></script>
+    </footer>
 
 
-<!--animations--> 
-<script src="node_modules/gsap/src/minified/TweenMax.min.js"></script>
-<script src="js/animation.js"></script>
 
-<!--Clients slider-->
-  <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
-  <script src="js/swiper.js"></script>
+    <!--Scripts-->
 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+    <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jkit.1.2.16.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+    <!--animations-->
+    <script src="node_modules/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="js/animation.js"></script>
+
+    <!--Clients slider-->
+    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
 
 </body>
 

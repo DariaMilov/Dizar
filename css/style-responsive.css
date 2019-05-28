@@ -34,10 +34,14 @@
   }
   .grid-hover, li.grid-item, li.grid-item img {
     width: 312px;
+    height: 234px;
   }
 }
 
 @media all and (max-width: 1179px) and (min-width: 1024px) {
+  .body_background {
+    background: none;
+    }
   header.boxed .header-margin {
     width: 800px;
   }
@@ -47,14 +51,52 @@
   .footer-margin {
     width: 800px;
   }
+  .content .text-intro h1, .content .text-intro p {
+    width: 100% !important;
+  }
   #full {
     width: 800px;
+    display: block !important;
+  }
+  .menu-index {
+    display: block !important;
   }
   .prev-next {
     max-width: 800px;
   }
+  .home-sidebar {
+    display: none;
+  }
+  ul.header-nav {
+    width: 50%;
+  }
+  header li>a {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .one-column, .two-column {
+    width: 100%;
+  }
+  .contact-one, .contact-two, .contact-three, .contact-four {
+    width: 100%;
+  }
+  textarea {
+    height: 250px;
+  }
+  input.button-submit {
+    margin-bottom: 100px;
+  }
+  .logo .phone {
+    font-size: 13px;
+  }
+  header.boxed {
+    display: none !important;
+  }
+  #footer-left {
+    text-align: center;
+  }
   .swiper-wrapper img {
-    width: 89px;
+    width: 77px;
   }
   /*
   **************************
@@ -62,18 +104,22 @@
   **************************
   */
   #portfolio-sidebar {
-    width: 580px !important;
-    padding-right: 250px;
+    width: 430px !important;
+    padding-right: 0;
   }
   .portfolio-grid {
-    width: 830px;
+    width: 430px;
   }
   .grid-hover, li.grid-item, li.grid-item img {
-    width: 246px;
+    width: 400px;
+      height: 300px;
   }
 }
 
 @media all and (max-width: 1023px) and (min-width: 769px) {
+  .body_background {
+    background: none;
+    }
   header.boxed .header-margin {
     width: 600px;
   }
@@ -119,10 +165,14 @@
   }
   .grid-hover, li.grid-item, li.grid-item img {
     width: 282px;
+    height: 211.5px;
   }
 }
 
 @media all and (max-width: 768px) and (min-width: 481px) {
+  .body_background {
+    background: none;
+    }
   header.boxed .header-margin {
     width: 400px;
   }
@@ -200,8 +250,7 @@
 @media all and (max-width: 480px) and (min-width: 320px) {
 
   .body_background {
-  background: url(../img/brush.png) no-repeat;
-   
+  background: none;
   }
   
   header.boxed .header-margin {
@@ -210,12 +259,24 @@
   p {
     font-size: 13px;
   }
+
+  .grid-hover p {
+    font-size: 11px;
+    height: 98px;
+
+  }
+
   .content .text-intro p {
     font-size: 13px;
   }
   .logo .phone {
     padding: 40px 6px 20px;
   }
+  .grid-hover h1{
+    font-size: 18px;
+    line-height: 21px;
+  }
+
   h2 {
     font-size: 20px;
     line-height: 32px;

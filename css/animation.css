@@ -48,7 +48,7 @@
     height: 100%;
     -webkit-transform: rotateY(-90deg) translate3d(0, 0, 12.5px);
     transform: rotateY(-90deg) translate3d(0, 0, 12.5px);
-    background: green;
+    background: white;
 }
 
 .frame__face--right {
@@ -56,7 +56,7 @@
     height: 100%;
     -webkit-transform: rotateY(90deg) translate3d(0, 0, 347.5px);
     transform: rotateY(90deg) translate3d(0, 0, 347.5px);
-    background: green;
+    background: white;
 }
 
 .frame__face--top {
@@ -64,7 +64,7 @@
     height: 25px;
     -webkit-transform: rotateX(90deg) translate3d(0, 0, 12.5px);
     transform: rotateX(90deg) translate3d(0, 0, 12.5px);
-    background: green;
+    background: white;
 }
 
 .frame__face--bottom {
@@ -72,7 +72,7 @@
     height: 25px;
     -webkit-transform: rotateX(-90deg) translate3d(0, 0, 257.5px);
     transform: rotateX(-90deg) translate3d(0, 0, 257.5px);
-    background: green;
+    background: white;
 }
 
 /*

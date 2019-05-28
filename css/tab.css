@@ -19,7 +19,6 @@ input[data-flex-tab] {
 	visibility: hidden;
 }
 
-
 .cmp-flex-tabs__tab {
 	width: 100%;
 	border-bottom: 0.125rem solid transparent;
@@ -45,16 +44,19 @@ label {
 	font-weight: 900;
 	line-height: 30px;
 	margin-top: 22px;
+	background-color: #d3d3d330;
 }
 
 @media (min-width: 64em) {
 	.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab {
 		order: -1;
 		width: auto;
-		padding: 11px 29px;;
+		padding: 11px 29px;
+	
 	}
 	.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab:not(:first-of-type) {
-		padding: 11px 29px;;
+		padding: 11px 29px;
+		
 	}
 }
 
@@ -64,11 +66,13 @@ label {
 	opacity: 0;
 	overflow: hidden;
 	transition: opacity 0.3s ease-out;
+	
 }
 
 input[data-flex-tab]:checked+.cmp-flex-tabs__tab {
 	border-color: currentColor;
-	padding: 11px 29px;;
+	padding: 11px 29px;
+	
 }
 
 input[data-flex-tab]:checked+.cmp-flex-tabs__tab+.cmp-flex-tabs__content {
@@ -78,4 +82,47 @@ input[data-flex-tab]:checked+.cmp-flex-tabs__tab+.cmp-flex-tabs__content {
 	opacity: 1;
 	overflow-y: auto;
 	transition: opacity 0.3s ease-in;
+}
+
+@media all and (max-width: 1330px) and (min-width: 1024px) {
+	.example-image {
+		width: 29%;
+	}
+	.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab:not(:first-of-type) {
+		padding: 11px 12px;
+	}
+	.cmp-flex-tabs:not(.cmp-flex-tabs--accordion) .cmp-flex-tabs__tab {
+		padding: 11px 12px;
+	}
+	label {
+		font-size: 12px;
+		letter-spacing: 0px;
+		font-weight: 800;
+	}
+	input[data-flex-tab]:checked+.cmp-flex-tabs__tab {
+		border-color: currentColor;
+		padding: 11px 12px;
+	}
+	.hidden {
+		display: none;
+	}
+}
+
+@media all and (max-width: 1023px) and (min-width: 481px) {
+	.example-image {
+		width: 40%;
+	}
+	.hidden {
+		display: none;
+	}
+}
+
+@media all and (max-width: 480px) and (min-width: 320px) {
+	.example-image {
+		width: 46%;
+		padding: 4px;
+	}
+	.hidden {
+		display: none;
+	}
 }

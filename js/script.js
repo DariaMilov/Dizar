@@ -22,8 +22,8 @@ $(function () {
   /*-------------------------------------------
   Ajax link page transitions
   ---------------------------------------------*/
-/*
-  	$("a.ajax-link").live("click", function(){
+
+  /*	$("a.ajax-link").live("click", function(){
       $this = $(this);
       var link = $this.attr('href');
       var current_url = $(location).attr('href');	
@@ -62,8 +62,8 @@ $(function () {
       }
       return false;
     });
-  
   */
+
   /*-------------------------------------------
   When you click back arrow
   ---------------------------------------------*/
