@@ -4,9 +4,6 @@ $('.frame').mousemove(function (e) {
     var xPos = $(this).offset().left;
     var yPos = $(this).offset().top;
 
-    console.log('xPos: ' + xPos);
-    console.log('yPos: ' + yPos);
-
     var left = e.pageX - xPos;
     var xOffset = left - $(this).width() / 2;
     var top = e.pageY - yPos;
