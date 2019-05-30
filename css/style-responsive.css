@@ -20,6 +20,7 @@
   .swiper-wrapper img {
     width: 89px;
   }
+  
   /*
   **************************
   Portfolio Grid
@@ -353,7 +354,7 @@
     text-align: center;
   }
   .content .text-intro h1 {
-    font-size: 20px;
+    font-size: 28px;
     line-height: 35px;
   }
   .swiper-wrapper img {
@@ -412,5 +413,9 @@
   -webkit-background-size: 100%;
   -o-background-size: 100%; 
   background-size: 100%;
+}
+.map{
+  width: 60%;
+  height: 40%;
 }
 }

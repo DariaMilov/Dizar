@@ -7,10 +7,8 @@ video {
     transform: translate(-50%, -50%);
     opacity: 0.25;
   }
-.video-about{
-  opacity: 0.10;
-}
-  @media all and (max-width: 1124px)  {
+  
+  @media all and (max-width: 1330px)  {
   video {
     width: auto;
     height: 100%;

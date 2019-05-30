@@ -14,8 +14,6 @@ $('.frame').mousemove(function (e) {
     var xPerc = (xOffset / $(this).width()) * 200;
     var yPerc = (yOffset / $(this).height()) * 200;
 
-    console.log(`xPos: ${xPos}, yPos: ${yPos}, left: ${left}, top: ${top}, xOffset: ${xOffset}, yOffset: ${yOffset}`);
-
     TweenMax.to($(this), 4, {
         rotationX: 0.3 * yPerc,
         rotationY: -0.3 * xPerc,
@@ -33,12 +31,3 @@ $('.frame').on('mouseleave', function () {
         ease: Expo.easeOut
     });
 });
-
-console.clear();
-
-/*  ==========================================================================
-    Greensock Dev Tools
-    ========================================================================== */
-
-//instantiate GSDevTools with default settings
-// GSDevTools.create( );
