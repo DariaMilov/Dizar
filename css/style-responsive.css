@@ -8,9 +8,7 @@
   .footer-margin {
     width: 1000px;
   }
-  .content .text-intro h1, .content .text-intro p {
-    width: 60%;
-  }
+
   #full {
     width: 1000px;
   }
@@ -390,8 +388,8 @@
     width: 310px;
   }
   .grid-hover, li.grid-item, li.grid-item img {
-    width: 250px;
-      height: 189px;
+    width: 280px;
+      height: 210px;
   }
 }
 
@@ -403,7 +401,7 @@
 
 @media all and (max-width: 768px) {
   .grid-hover {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 }
 @media all and (max-width: 1840px) and (min-width: 480px) {
