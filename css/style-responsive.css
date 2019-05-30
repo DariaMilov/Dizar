@@ -19,6 +19,10 @@
     width: 89px;
   }
   
+  .home-sidebar {
+    width: 34%;
+  }
+  
   /*
   **************************
   Portfolio Grid
@@ -31,7 +35,7 @@
   .portfolio-grid {
     width: 1030px;
   }
-  .grid-hover, li.grid-item, li.grid-item img {
+  .grid-hover, li.grid-item, li.grid-item img  {
     width: 312px;
     height: 234px;
   }
@@ -109,7 +113,7 @@
   .portfolio-grid {
     width: 430px;
   }
-  .grid-hover, li.grid-item, li.grid-item img {
+  .grid-hover, li.grid-item, li.grid-item img  {
     width: 380px;
       height: 285px;
   }
@@ -162,7 +166,7 @@
   .portfolio-grid {
     width: 630px;
   }
-  .grid-hover, li.grid-item, li.grid-item img {
+  .grid-hover, li.grid-item, li.grid-item img  {
     width: 282px;
     height: 211.5px;
   }
@@ -175,7 +179,7 @@
   header.boxed .header-margin {
     width: 400px;
   }
-  .content .text-intro, .swiper-container {
+  .content .text-intro, .swiper-container, .map {
     width: 400px;
   }
   .footer-margin {
@@ -254,7 +258,7 @@
   .portfolio-grid {
     width: 430px;
   }
-  .grid-hover, li.grid-item, li.grid-item img {
+  .grid-hover, li.grid-item, li.grid-item img  {
     width: 400px;
       height: 300px;
   }
@@ -299,7 +303,7 @@
     width: 100px;
     padding: 40px 0px 20px;
   }
-  .content .text-intro, .swiper-container {
+  .content .text-intro, .swiper-container, .map {
     width: 280px;
   }
   .content .text-intro {
@@ -387,7 +391,7 @@
   .portfolio-grid {
     width: 310px;
   }
-  .grid-hover, li.grid-item, li.grid-item img {
+  .grid-hover, li.grid-item, li.grid-item img  {
     width: 280px;
       height: 210px;
   }

@@ -464,7 +464,7 @@ HOME SIDEBAR
 .home-sidebar {
   top: 0;
   position: absolute;
-  width: 39.3333%;
+  width: 35.3333%;
   right: 0;
   height: 100%;
   background: none;
@@ -601,7 +601,7 @@ li.grid-item img {
 ------------------------------------------------------------------*/
 
 .swiper-container {
-  width: 60%;
+  width: 1140px;
 }
 
 .swiper-wrapper img {
